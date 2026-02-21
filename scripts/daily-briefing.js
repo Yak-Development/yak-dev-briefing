@@ -14,23 +14,50 @@ if (!LINEAR_API_KEY || !ANTHROPIC_API_KEY) {
 
 // ─── Fetch Active Linear Issues ───────────────────────────────────
 async function fetchLinearIssues() {
+  console.log(`Initializing Linear client (team: ${TEAM_KEY})...`);
+  console.log(`API key present: ${!!LINEAR_API_KEY} (length: ${LINEAR_API_KEY.length})`);
+
   const linear = new LinearClient({ apiKey: LINEAR_API_KEY });
 
-  // Fetch all non-completed, non-canceled issues
-  const issues = await linear.issues({
-    filter: {
-      team: { key: { eq: TEAM_KEY } },
-      state: {
-        type: { nin: ["completed", "canceled"] },
+  // Quick connectivity check — fetch the authenticated user
+  try {
+    const viewer = await linear.viewer;
+    console.log(`Connected to Linear as: ${viewer.name} (${viewer.email})`);
+  } catch (err) {
+    console.error("Failed to authenticate with Linear:", err.message);
+    throw err;
+  }
+
+  // Fetch issues for the team, no fancy filters — we'll filter in code
+  console.log(`Fetching issues for team "${TEAM_KEY}"...`);
+  let issues;
+  try {
+    issues = await linear.issues({
+      first: 100,
+      filter: {
+        team: { key: { eq: TEAM_KEY } },
       },
-    },
-    orderBy: linear.PaginationOrderBy?.UpdatedAt || "updatedAt",
-  });
+    });
+    console.log(`Linear returned ${issues.nodes.length} total issues (before filtering).`);
+  } catch (err) {
+    console.error("Failed to fetch issues from Linear:", err.message);
+    throw err;
+  }
 
   const enrichedIssues = [];
 
+  let skipped = 0;
   for (const issue of issues.nodes) {
     const state = await issue.state;
+    const stateName = state?.name || "Unknown";
+    const stateType = state?.type || "unknown";
+
+    // Skip completed and canceled issues
+    if (stateType === "completed" || stateType === "canceled") {
+      skipped++;
+      continue;
+    }
+
     const project = await issue.project;
     const assignee = await issue.assignee;
     const labels = await issue.labels();
@@ -42,7 +69,7 @@ async function fetchLinearIssues() {
       priority: issue.priority,
       priorityLabel: issue.priorityLabel,
       dueDate: issue.dueDate,
-      status: state?.name || "Unknown",
+      status: stateName,
       project: project?.name || "No Project",
       assignee: assignee?.name || "Unassigned",
       labels: labels.nodes.map((l) => l.name),
@@ -52,6 +79,7 @@ async function fetchLinearIssues() {
     });
   }
 
+  console.log(`Enriched ${enrichedIssues.length} active issues (skipped ${skipped} completed/canceled).`);
   return enrichedIssues;
 }
 
