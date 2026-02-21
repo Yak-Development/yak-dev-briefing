@@ -6,6 +6,7 @@ import { writeFileSync } from "fs";
 const LINEAR_API_KEY = process.env.LINEAR_API_KEY;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const TEAM_KEY = process.env.LINEAR_TEAM_KEY || "YAK"; // Your Linear team key
+const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-6";
 
 if (!LINEAR_API_KEY || !ANTHROPIC_API_KEY) {
   console.error("Missing LINEAR_API_KEY or ANTHROPIC_API_KEY");
@@ -110,8 +111,9 @@ Generate a concise daily briefing for Zach. The format should be:
 
 Keep it punchy and actionable. No fluff. Use plain text (this will be sent via iMessage so no markdown). Use line breaks and simple dashes for structure. Keep the whole thing under 1500 characters so it's readable on a phone screen.`;
 
+  console.log(`Using model: ${ANTHROPIC_MODEL}`);
   const message = await anthropic.messages.create({
-    model: "claude-opus-4-6-20250514",
+    model: ANTHROPIC_MODEL,
     max_tokens: 1024,
     messages: [{ role: "user", content: prompt }],
   });
