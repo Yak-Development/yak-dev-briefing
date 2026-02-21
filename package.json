@@ -1,0 +1,13 @@
+{
+  "name": "yak-dev-briefing",
+  "version": "1.0.0",
+  "description": "Daily priority briefing from Linear via Claude",
+  "type": "module",
+  "scripts": {
+    "briefing": "node scripts/daily-briefing.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@linear/sdk": "^29.0.0"
+  }
+}

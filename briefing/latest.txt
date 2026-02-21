@@ -1,0 +1,1 @@
+No briefing generated yet. Run the workflow manually or wait for the next scheduled run.
