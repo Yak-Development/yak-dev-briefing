@@ -1,0 +1,44 @@
+name: Daily Briefing
+
+on:
+  schedule:
+    - cron: "0 14 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-briefing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Create briefing directories
+        run: mkdir -p briefing/archive
+
+      - name: Generate briefing
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LINEAR_TEAM_KEY: YAK
+        run: npm run briefing
+
+      - name: Commit and push briefing
+        run: |
+          git config user.name "Briefing Bot"
+          git config user.email "briefing-bot@yakdev.com"
+          git add briefing/
+          git diff --staged --quiet || git commit -m "Daily briefing $(date +%Y-%m-%d)"
+          git push
