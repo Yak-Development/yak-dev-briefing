@@ -28,17 +28,18 @@ async function fetchLinearIssues() {
     throw err;
   }
 
-  // Fetch issues for the team, no fancy filters — we'll filter in code
-  console.log(`Fetching issues for team "${TEAM_KEY}"...`);
+  // Fetch only active issues (backlog, unstarted, started) — skip completed/canceled at the API level
+  console.log(`Fetching active issues for team "${TEAM_KEY}"...`);
   let issues;
   try {
     issues = await linear.issues({
       first: 100,
       filter: {
         team: { key: { eq: TEAM_KEY } },
+        state: { type: { in: ["backlog", "unstarted", "started"] } },
       },
     });
-    console.log(`Linear returned ${issues.nodes.length} total issues (before filtering).`);
+    console.log(`Linear returned ${issues.nodes.length} active issues.`);
   } catch (err) {
     console.error("Failed to fetch issues from Linear:", err.message);
     throw err;
@@ -46,17 +47,9 @@ async function fetchLinearIssues() {
 
   const enrichedIssues = [];
 
-  let skipped = 0;
   for (const issue of issues.nodes) {
     const state = await issue.state;
     const stateName = state?.name || "Unknown";
-    const stateType = state?.type || "unknown";
-
-    // Skip completed and canceled issues
-    if (stateType === "completed" || stateType === "canceled") {
-      skipped++;
-      continue;
-    }
 
     const project = await issue.project;
     const assignee = await issue.assignee;
@@ -79,7 +72,7 @@ async function fetchLinearIssues() {
     });
   }
 
-  console.log(`Enriched ${enrichedIssues.length} active issues (skipped ${skipped} completed/canceled).`);
+  console.log(`Enriched ${enrichedIssues.length} active issues.`);
   return enrichedIssues;
 }
 
@@ -118,7 +111,7 @@ Generate a concise daily briefing for Zach. The format should be:
 Keep it punchy and actionable. No fluff. Use plain text (this will be sent via iMessage so no markdown). Use line breaks and simple dashes for structure. Keep the whole thing under 1500 characters so it's readable on a phone screen.`;
 
   const message = await anthropic.messages.create({
-    model: "claude-sonnet-4-5-20250514",
+    model: "claude-opus-4-6-20250514",
     max_tokens: 1024,
     messages: [{ role: "user", content: prompt }],
   });
