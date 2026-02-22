@@ -1,0 +1,28 @@
+name = "yak-dev-agent"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+
+# Daily briefing cron — 1pm UTC = ~8am EST / 7am CST weekdays
+# Adjust to your timezone as needed
+[triggers]
+crons = ["0 13 * * 1-5"]
+
+# KV namespace for conversation history + briefing cache
+# 1. Run: npx wrangler kv namespace create KV
+# 2. Paste the id it gives you below
+# 3. Optionally run: npx wrangler kv namespace create KV --preview
+#    and paste that id into preview_id for local dev
+[[kv_namespaces]]
+binding = "KV"
+id = "e9dd6a56f31d4d70a5de76a1aa03e209"
+
+[vars]
+LINEAR_TEAM_KEY = "YAK"
+ANTHROPIC_MODEL = "claude-opus-4-6"
+
+# ─── Secrets (set via `npx wrangler secret put <NAME>`) ───
+# TELEGRAM_BOT_TOKEN   — from @BotFather
+# TELEGRAM_CHAT_ID     — your personal chat ID (message @userinfobot to get it)
+# ANTHROPIC_API_KEY    — from console.anthropic.com
+# LINEAR_API_KEY       — from linear.app settings
+# WEBHOOK_SECRET       — any random string, used to verify Telegram webhook calls

@@ -1,16 +1,56 @@
 import { LinearClient } from "@linear/sdk";
 import Anthropic from "@anthropic-ai/sdk";
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync, existsSync } from "fs";
+import { createHash } from "crypto";
 
 // ─── Config ───────────────────────────────────────────────────────
 const LINEAR_API_KEY = process.env.LINEAR_API_KEY;
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const TEAM_KEY = process.env.LINEAR_TEAM_KEY || "YAK"; // Your Linear team key
 const ANTHROPIC_MODEL = process.env.ANTHROPIC_MODEL || "claude-opus-4-6";
+const CACHE_PATH = "briefing/cache.json";
+const STALE_DAYS_THRESHOLD = 3; // After this many unchanged days, send the "lock in" message
 
 if (!LINEAR_API_KEY || !ANTHROPIC_API_KEY) {
   console.error("Missing LINEAR_API_KEY or ANTHROPIC_API_KEY");
   process.exit(1);
+}
+
+// ─── Cache Helpers ────────────────────────────────────────────────
+function readCache() {
+  try {
+    if (existsSync(CACHE_PATH)) {
+      return JSON.parse(readFileSync(CACHE_PATH, "utf-8"));
+    }
+  } catch {
+    console.log("Cache file unreadable, starting fresh.");
+  }
+  return null;
+}
+
+function writeCache(data) {
+  writeFileSync(CACHE_PATH, JSON.stringify(data, null, 2));
+}
+
+/**
+ * Build a deterministic fingerprint of the current issue state.
+ * Captures each issue's identifier, status, priority, assignee, project,
+ * labels, and due date — so any movement triggers a fresh briefing.
+ */
+function hashIssues(issues) {
+  const normalized = issues
+    .map((i) => ({
+      id: i.identifier,
+      status: i.status,
+      priority: i.priority,
+      assignee: i.assignee,
+      project: i.project,
+      labels: [...i.labels].sort(),
+      dueDate: i.dueDate,
+    }))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+  return createHash("sha256").update(JSON.stringify(normalized)).digest("hex");
 }
 
 // ─── Fetch Active Linear Issues ───────────────────────────────────
@@ -123,6 +163,8 @@ Keep it punchy and actionable. No fluff. Use plain text (this will be sent via i
 
 // ─── Main ─────────────────────────────────────────────────────────
 async function main() {
+  const today = new Date().toISOString().split("T")[0];
+
   console.log("Fetching Linear issues...");
   const issues = await fetchLinearIssues();
   console.log(`Found ${issues.length} active issues.`);
@@ -130,19 +172,45 @@ async function main() {
   if (issues.length === 0) {
     const briefing = "No active issues in Linear. Either you're crushing it or something is wrong.";
     writeFileSync("briefing/latest.txt", briefing);
+    writeFileSync(`briefing/archive/${today}.txt`, briefing);
+    writeCache({ hash: null, briefing, unchangedDays: 0, lastRun: today });
     console.log("No issues found. Briefing saved.");
     return;
   }
 
-  console.log("Generating briefing via Claude...");
+  // ─── Cache check ──────────────────────────────────────────────
+  const currentHash = hashIssues(issues);
+  const cache = readCache();
+
+  if (cache && cache.hash === currentHash) {
+    const unchangedDays = (cache.unchangedDays || 0) + 1;
+    console.log(`Tasks unchanged for ${unchangedDays} day(s). Skipping Anthropic call.`);
+
+    let briefing;
+    if (unchangedDays >= STALE_DAYS_THRESHOLD) {
+      briefing = "SNAP OUT OF IT, LOCK IN!";
+      console.log(`Stale for ${unchangedDays} days — sending the wake-up call.`);
+    } else {
+      briefing = cache.briefing;
+      console.log("Reusing cached briefing.");
+    }
+
+    writeFileSync("briefing/latest.txt", briefing);
+    writeFileSync(`briefing/archive/${today}.txt`, briefing);
+    writeCache({ hash: currentHash, briefing: cache.briefing, unchangedDays, lastRun: today });
+
+    console.log("Briefing saved (cached):");
+    console.log(briefing);
+    return;
+  }
+
+  // ─── Tasks changed (or first run) — generate fresh briefing ───
+  console.log(cache ? "Tasks changed since last run. Generating fresh briefing..." : "No cache found. Generating first briefing...");
   const briefing = await generateBriefing(issues);
 
-  // Save to file (committed to repo for Shortcut to fetch)
   writeFileSync("briefing/latest.txt", briefing);
-
-  // Also save a timestamped version for history
-  const timestamp = new Date().toISOString().split("T")[0];
-  writeFileSync(`briefing/archive/${timestamp}.txt`, briefing);
+  writeFileSync(`briefing/archive/${today}.txt`, briefing);
+  writeCache({ hash: currentHash, briefing, unchangedDays: 0, lastRun: today });
 
   console.log("Briefing generated and saved:");
   console.log(briefing);
