@@ -1,34 +1,28 @@
-DAILY BRIEFING — Friday, Oct 16, 2026
+DAILY BRIEFING — Monday, Oct 19, 2026
 
 1. TOP PRIORITY
 
-- Fiddletree 20hrs (YAK-433) — due TOMORROW (Sat). Lock in your hours today. You also have a pile of overdue weekly tickets (YAK-431 back to YAK-388) still In Progress. Close out anything completed.
-
-- Bi-Weekly Invoice (YAK-432) — due next Friday 10/23. But YAK-429 (due 10/9) and every invoice ticket back to YAK-326 (due 2/27) are still open in Todo. If you haven't sent those invoices, you have months of unsent invoices stacking up. Handle this today.
+Fiddletree "20 hours a week" — YAK-433 was due Oct 17 (Saturday). Mark it done or log what's left. YAK-431 (due Oct 10) and YAK-430 (due Oct 3) and everything older are still showing In Progress. You have a massive backlog of unclosed weekly tickets going back to March. Close out every completed week TODAY.
 
 2. THIS WEEK
 
 Fiddletree
-- Get this week's 20hrs done and close YAK-433. Bulk-close all past completed weekly tickets so your board isn't a disaster.
+- YAK-434: 20 hrs due this Friday Oct 24. Track your hours and deliver.
 
 Yak Dev Company
-- Sort out the invoice backlog. Send any outstanding invoices or mark tickets done if already sent.
+- YAK-432: Bi-weekly invoice due Friday Oct 23. Prep time tracking across all projects so you're ready to send.
 
 EZ Layaway
-- No due dates set, but 50+ tickets sitting in Todo with no assignees. If this project is active, block out time to prioritize and assign.
+- 48 tickets sitting in Todo, no assignees, no due dates, no priorities. Nothing moves until you scope and prioritize this backlog. Even 30 min to set priorities and sequence the first sprint would help.
 
 3. BLOCKED / WAITING
 
-- EZ Layaway (YAK-337) — Resend domain config is In Progress, unassigned. Who's on this? Everything downstream (emails, reminders, payment notifications) depends on it.
-
-- Taxes (YAK-324, YAK-325) — Both overdue from March. If these aren't done, handle immediately. Penalties accrue.
+- YAK-337 (Resend domain config) is In Progress with no assignee. Who's on this? If it's you, finish it — multiple EZ Layaway email tickets depend on it.
+- YAK-325 (Pay estimated taxes) was due Mar 21 and is still in Backlog. Is this done? If so close it. If not, handle it — you're 7 months late.
+- Invoice sends YAK-329 and YAK-326 from Feb/Mar still open. Close them if sent.
 
 4. LOW PRIORITY
 
-- EZ Layaway has a full feature backlog (YAK-339 through YAK-386) ready to sequence when you're ready to kick that project off properly.
+- EZ Layaway has a solid ticket breakdown but zero momentum. Once Fiddletree hours are stable this week, block time to kick off the admin auth and scaffold tickets (YAK-379, YAK-365) as foundational work.
 
-ACTION ITEMS TODAY:
-1. Finish Fiddletree hours
-2. Send overdue invoices / close old invoice tickets
-3. Confirm taxes are filed or escalate
-4. Close stale Fiddletree weekly tickets
+Action for today: Close all completed past-due tickets. It'll take 10 min and clean up your board significantly.
