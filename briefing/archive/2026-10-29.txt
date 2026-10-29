@@ -1,0 +1,36 @@
+DAILY BRIEFING — Thursday, Oct 29, 2026
+
+1. TOP PRIORITY
+
+- Fiddletree "20 hours a week" (YAK-436) — due Saturday 10/31. You have 2 days to hit your hours this week. Lock in your time today and tomorrow.
+
+- Fiddletree hours are SEVERELY behind — YAK-434 (due 10/24), YAK-433 (due 10/17), and every week back to March are still "In Progress." That's 25+ overdue weekly tickets. You need to either close out completed weeks or address the backlog. This is a mess in Linear.
+
+- Invoice send (YAK-432) — was due 10/23, still Todo. Six days overdue. Send that invoice TODAY or you're leaving money on the table.
+
+
+2. THIS WEEK
+
+Fiddletree:
+- Finish this week's 20hrs by Saturday
+- Close out all past Fiddletree weekly tickets that are done
+
+Yak Dev Company:
+- Send overdue invoice (YAK-432) immediately
+- Next invoice (YAK-435) due 11/6 — start tracking hours now so you're ready
+
+
+3. BLOCKED / WAITING
+
+EZ Layaway — 50 tickets sitting in Todo, no assignees, no due dates, no priorities. Resend config (YAK-337) is the only one In Progress. Nothing moves until you decide:
+- Are you working on this actively or is it on hold?
+- If active, prioritize and assign the tickets
+- At minimum set priorities on the foundation tickets (auth, scaffolding, Resend setup)
+
+
+4. LOW PRIORITY
+
+- 13 past-due invoice tickets (YAK-329 through YAK-429) still open in Todo. If these were sent, close them. If not, you have a billing problem.
+- EZ Layaway can wait but the backlog needs a plan soon.
+
+ACTION FOR TODAY: Send that invoice. Log Fiddletree hours. Clean up your completed tickets.
