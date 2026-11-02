@@ -1,0 +1,27 @@
+DAILY BRIEFING — Mon Nov 2, 2026
+
+1. TOP PRIORITY
+
+Fiddletree "20 hours a week" — You have FIVE overdue weeks still open (YAK-430 thru YAK-434, due Sep 26 through Oct 31). Close out anything that's done. YAK-436 was due Saturday. If hours are logged, mark them complete.
+
+Bi-weekly invoices — YAK-429 (Oct 9) and YAK-432 (Oct 23) are both overdue and still in Todo. Did these get sent? If yes, close them. If not, send today.
+
+2. THIS WEEK
+
+Fiddletree
+- YAK-437: 20 hrs due this Friday Nov 7. Track hours this week.
+
+Yak Dev Company
+- YAK-435: Invoice send due Friday Nov 6. Prep by reviewing all project work for the billing period.
+
+EZ Layaway
+- No due dates set on any of the 50+ tickets. If you want to start making progress, YAK-337 (Resend domain setup) is already In Progress — finish that so email-dependent work isn't blocked downstream.
+
+3. BLOCKED / WAITING
+
+EZ Layaway — Every ticket is unassigned with no priority and no due date. This whole project is in limbo. Needs a roadmap pass: set priorities, assign work, and put dates on at least the first milestone.
+
+4. LOW PRIORITY
+
+- EZ Layaway has ~50 tickets scaffolded across admin dashboard, merchant app, customer portal, payments, and email. Good backlog shape but nothing moves until you prioritize it.
+- Clean up old completed Fiddletree weekly tickets — you have months of open issues cluttering Linear.

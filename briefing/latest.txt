@@ -1,28 +1,27 @@
-DAILY BRIEFING — Friday, Oct 30, 2026
+DAILY BRIEFING — Mon Nov 2, 2026
 
 1. TOP PRIORITY
 
-- Fiddletree "20 hours a week" (YAK-436) — due TOMORROW (Oct 31). Make sure your hours are logged and wrapped up today since tomorrow is Saturday.
-- Fiddletree hours are OVERDUE for every week since March (YAK-434 back through YAK-388). You have a massive backlog of unclosed weekly tickets. Either bulk-close these or figure out what's going on with your tracking process — this is noise pollution in Linear.
+Fiddletree "20 hours a week" — You have FIVE overdue weeks still open (YAK-430 thru YAK-434, due Sep 26 through Oct 31). Close out anything that's done. YAK-436 was due Saturday. If hours are logged, mark them complete.
+
+Bi-weekly invoices — YAK-429 (Oct 9) and YAK-432 (Oct 23) are both overdue and still in Todo. Did these get sent? If yes, close them. If not, send today.
 
 2. THIS WEEK
 
-Yak Dev Company
-- Bi-weekly invoice (YAK-435) due next Friday Nov 6. Start assessing billable hours across projects now so you're not scrambling.
-- Invoice YAK-432 (due Oct 23) is overdue. Send it today if it hasn't gone out.
-
 Fiddletree
-- Hit your 20 hours this week and close YAK-436.
+- YAK-437: 20 hrs due this Friday Nov 7. Track hours this week.
+
+Yak Dev Company
+- YAK-435: Invoice send due Friday Nov 6. Prep by reviewing all project work for the billing period.
 
 EZ Layaway
-- No due dates set on any of the 50+ tickets. If this project is active, you need to prioritize and set timelines. If it's on hold, fine, but flag it.
+- No due dates set on any of the 50+ tickets. If you want to start making progress, YAK-337 (Resend domain setup) is already In Progress — finish that so email-dependent work isn't blocked downstream.
 
 3. BLOCKED / WAITING
 
-- EZ Layaway has zero assignees on every ticket. Nothing will move until you assign work or start picking these up yourself. Decide today: is this project active or backlogged?
-- Resend domain config (YAK-337) is marked In Progress with no assignee. Who's on this?
+EZ Layaway — Every ticket is unassigned with no priority and no due date. This whole project is in limbo. Needs a roadmap pass: set priorities, assign work, and put dates on at least the first milestone.
 
 4. LOW PRIORITY
 
-- You have ~20 overdue bi-weekly invoice tickets and ~25 overdue Fiddletree weekly tickets still open. Bulk-close everything that's been completed. Your board is a mess and it's hiding real work.
-- EZ Layaway has a clean ticket structure (admin, customer portal, payments, emails, analytics). Good foundation — just needs scheduling when you're ready to kick it off.
+- EZ Layaway has ~50 tickets scaffolded across admin dashboard, merchant app, customer portal, payments, and email. Good backlog shape but nothing moves until you prioritize it.
+- Clean up old completed Fiddletree weekly tickets — you have months of open issues cluttering Linear.
