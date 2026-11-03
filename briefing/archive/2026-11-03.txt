@@ -1,0 +1,38 @@
+DAILY BRIEFING — Tue Nov 3, 2026
+
+—
+
+1. TOP PRIORITY
+
+Fiddletree "20 hours a week" — You have FIVE overdue weekly tickets (YAK-430 through YAK-436, dating back to Oct 3). YAK-436 was due Oct 31. Either close out the completed weeks or flag a problem. Current week YAK-437 is due Nov 7.
+
+Invoicing — YAK-432 (due Oct 23) and YAK-429 (due Oct 9) are overdue and still in Todo. Did these get sent? If so, close them out. Next invoice YAK-435 is due this Friday Nov 6.
+
+—
+
+2. THIS WEEK
+
+Fiddletree:
+- Log your 20hrs for this week (YAK-437, due Fri Nov 7)
+- Clean up all the overdue weekly tickets — mark done or update status
+
+Yak Dev Company:
+- Send invoices by Friday Nov 6 (YAK-435)
+- Close out past-due invoice tickets (YAK-429, YAK-432)
+
+EZ Layaway:
+- No deadlines this week but YAK-337 (Resend domain config) is In Progress — worth pushing to done if waiting on DNS propagation
+
+—
+
+3. BLOCKED / WAITING
+
+EZ Layaway has 50+ tickets sitting in Todo, all unassigned, no priority, no due dates. None of this moves until you scope timelines and assign work. Decision needed: when does EZ Layaway dev kick off?
+
+—
+
+4. LOW PRIORITY
+
+EZ Layaway backlog is built out nicely (YAK-337 through YAK-386) covering admin dashboard, customer portal, payments, emails, and Shopify integration. No action needed now but worth prioritizing soon.
+
+Housekeeping: you have ~20 old Fiddletree weekly tickets and ~10 old invoice tickets still open going back months. Bulk close them when you get 5 minutes.
