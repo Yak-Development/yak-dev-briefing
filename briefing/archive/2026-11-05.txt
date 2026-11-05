@@ -1,0 +1,29 @@
+DAILY BRIEFING — Thu Nov 5, 2026
+
+1. TOP PRIORITY
+
+- Invoice send (YAK-435) due TOMORROW Nov 6. Get time tracked across all projects and prep invoices today so you can fire them off Friday morning.
+- Fiddletree 20hrs (YAK-437) due Sat Nov 7. You're in the middle of this week's block — make sure you're on track to hit 20 hours by end of week.
+- OVERDUE: You have a pile of unclosed Fiddletree weekly tickets (YAK-436, 434, 433, 431, 430, 428, 427... all the way back to March) and old invoice tickets still in Todo/In Progress. These need to be closed out or they're just noise. Batch-close them today.
+
+2. THIS WEEK
+
+Fiddletree
+- Hit your 20 hours and close YAK-437 by Saturday
+- Close all past-due weekly tickets
+
+Yak Dev Company
+- Send invoices tomorrow (YAK-435)
+- Close all past-due invoice tickets (YAK-432, 429, 426, etc.)
+
+EZ Layaway
+- No deadlines this week but a huge backlog sitting unassigned and unprioritized (YAK-337 through YAK-386). If you want to make progress, pick a starting point — the infra/backend work (auth, Resend config, API scaffolding) is the logical first move.
+
+3. BLOCKED / WAITING
+
+- EZ Layaway (YAK-337) Resend domain config is marked In Progress but unassigned. Who's on this? If it's you, finish it. If not, assign it.
+- All 30+ EZ Layaway tickets have no assignee, no priority, no due dates. Nothing will move until you scope and schedule this work.
+
+4. LOW PRIORITY
+
+- EZ Layaway marketing site (Sanity + Next.js, YAK-365-370) and admin dashboard (YAK-379-386) can wait but keep them on the radar for planning.

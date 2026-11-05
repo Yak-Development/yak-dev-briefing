@@ -1,28 +1,29 @@
-DAILY BRIEFING — Wed Nov 4, 2026
+DAILY BRIEFING — Thu Nov 5, 2026
 
 1. TOP PRIORITY
 
-Fiddletree "20 hours a week" — You have FIVE overdue weekly tickets (YAK-430 through YAK-436, dating back to Oct 3). YAK-436 was due Oct 31. Close out the old ones and stay on track for YAK-437 due this Friday Nov 7.
-
-Bi-weekly invoice send (YAK-435) — Due this Friday Nov 6. Start assessing work across projects now so you're ready to send invoices Friday. Note: YAK-432 and YAK-429 (and many older ones) are also overdue and still in Todo. Close those out.
+- Invoice send (YAK-435) due TOMORROW Nov 6. Get time tracked across all projects and prep invoices today so you can fire them off Friday morning.
+- Fiddletree 20hrs (YAK-437) due Sat Nov 7. You're in the middle of this week's block — make sure you're on track to hit 20 hours by end of week.
+- OVERDUE: You have a pile of unclosed Fiddletree weekly tickets (YAK-436, 434, 433, 431, 430, 428, 427... all the way back to March) and old invoice tickets still in Todo/In Progress. These need to be closed out or they're just noise. Batch-close them today.
 
 2. THIS WEEK
 
 Fiddletree
-- Hit your 20 hrs for the current week (YAK-437, due Nov 7)
-- Bulk-close all past-due weekly tickets
+- Hit your 20 hours and close YAK-437 by Saturday
+- Close all past-due weekly tickets
 
 Yak Dev Company
-- Prep and send invoices by Friday (YAK-435)
-- Close all overdue invoice tickets (YAK-429, 432, and everything older)
+- Send invoices tomorrow (YAK-435)
+- Close all past-due invoice tickets (YAK-432, 429, 426, etc.)
 
 EZ Layaway
-- No deadlines this week but 50+ tickets sitting in Todo with no assignees, no priorities, no due dates. If this project is active, it needs a plan.
+- No deadlines this week but a huge backlog sitting unassigned and unprioritized (YAK-337 through YAK-386). If you want to make progress, pick a starting point — the infra/backend work (auth, Resend config, API scaffolding) is the logical first move.
 
 3. BLOCKED / WAITING
 
-EZ Layaway — Every ticket (YAK-337 through YAK-386) is unassigned with no priority or due date. YAK-337 (Resend domain config) is the only one In Progress but also unassigned. Who's working this? Needs your call on sequencing and ownership.
+- EZ Layaway (YAK-337) Resend domain config is marked In Progress but unassigned. Who's on this? If it's you, finish it. If not, assign it.
+- All 30+ EZ Layaway tickets have no assignee, no priority, no due dates. Nothing will move until you scope and schedule this work.
 
 4. LOW PRIORITY
 
-EZ Layaway backlog is large and organized into logical phases (infra, merchant dashboard, customer portal, admin dashboard, marketing site). No action needed today but flag time this week to prioritize and assign.
+- EZ Layaway marketing site (Sanity + Next.js, YAK-365-370) and admin dashboard (YAK-379-386) can wait but keep them on the radar for planning.
