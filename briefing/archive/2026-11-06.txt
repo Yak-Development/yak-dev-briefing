@@ -1,0 +1,26 @@
+DAILY BRIEFING — Friday, Nov 6, 2026
+
+1. TOP PRIORITY
+
+- INVOICE DAY. YAK-435 is due TODAY. Assess work across all projects and send invoices. Do this before end of day.
+- Fiddletree 20hrs (YAK-437) due TOMORROW (Sat). Make sure this week's hours are logged and on track.
+- You have a pile of overdue Fiddletree weekly tickets (YAK-436 back through YAK-391) and old invoice tickets still open. Either close the completed ones or flag what's actually outstanding. This backlog is noise.
+
+2. THIS WEEK
+
+Fiddletree:
+- Current week's 20hrs (YAK-437) wraps tomorrow. Get hours in.
+
+Yak Dev Company:
+- Send invoices today (YAK-435).
+
+EZ Layaway:
+- No due dates set on any of the 50+ tickets, but worth noting YAK-337 (Resend domain config) is the only one In Progress. Check if that's actually moving or stalled.
+
+3. BLOCKED / WAITING
+
+- EZ Layaway has ~50 tickets sitting in Todo with no assignees, no priorities, no due dates. Nothing is blocked per se, but nothing is moving either. If this project is active, it needs a plan — scope a sprint, assign priorities, set dates. If it's on hold, fine, but be intentional about it.
+
+4. LOW PRIORITY
+
+- Clean up old completed Fiddletree/invoice tickets. You have 6+ months of recurring tasks still showing as active. Close what's done so your board isn't a wall of noise.
