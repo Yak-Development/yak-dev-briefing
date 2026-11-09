@@ -1,26 +1,25 @@
-DAILY BRIEFING — Friday, Nov 6, 2026
+DAILY BRIEFING — Monday, Nov 9, 2026
 
 1. TOP PRIORITY
 
-- INVOICE DAY. YAK-435 is due TODAY. Assess work across all projects and send invoices. Do this before end of day.
-- Fiddletree 20hrs (YAK-437) due TOMORROW (Sat). Make sure this week's hours are logged and on track.
-- You have a pile of overdue Fiddletree weekly tickets (YAK-436 back through YAK-391) and old invoice tickets still open. Either close the completed ones or flag what's actually outstanding. This backlog is noise.
+OVERDUE: YAK-437 "20 hours a week" (Fiddletree) was due Nov 7. Close it out or log remaining hours NOW.
+
+ALSO OVERDUE: YAK-435 "Bi-Weekly invoice send" was due Nov 6. Invoice should have gone out Friday. Send today if it hasn't gone out.
+
+Massive backlog alert: You have 20+ Fiddletree weekly tickets and 10+ invoice tickets still open dating back to March. These need to be bulk-closed if completed, or you have a tracking problem to fix.
 
 2. THIS WEEK
 
 Fiddletree:
-- Current week's 20hrs (YAK-437) wraps tomorrow. Get hours in.
+- YAK-439 "20 hours a week" due Nov 14. Current week's work — stay on pace.
 
 Yak Dev Company:
-- Send invoices today (YAK-435).
-
-EZ Layaway:
-- No due dates set on any of the 50+ tickets, but worth noting YAK-337 (Resend domain config) is the only one In Progress. Check if that's actually moving or stalled.
+- YAK-438 "Bi-Weekly invoice send" due Nov 20. Next invoice cycle, not urgent yet.
 
 3. BLOCKED / WAITING
 
-- EZ Layaway has ~50 tickets sitting in Todo with no assignees, no priorities, no due dates. Nothing is blocked per se, but nothing is moving either. If this project is active, it needs a plan — scope a sprint, assign priorities, set dates. If it's on hold, fine, but be intentional about it.
+EZ Layaway has 47 tickets (YAK-340 through YAK-386) all sitting in Todo, no assignee, no priority, no due dates. Nothing is moving. If this project is active, it needs a plan — scope a sprint, set priorities, assign work. If it's on hold, note that somewhere so it's not noise.
 
 4. LOW PRIORITY
 
-- Clean up old completed Fiddletree/invoice tickets. You have 6+ months of recurring tasks still showing as active. Close what's done so your board isn't a wall of noise.
+- Clean up your Linear board. Bulk-close all completed Fiddletree weekly tickets and invoice tickets. Having 50+ stale open issues makes it impossible to see what actually matters.
