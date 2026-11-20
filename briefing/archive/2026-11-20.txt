@@ -1,0 +1,25 @@
+DAILY BRIEFING — Friday, Nov 20, 2026
+
+1. TOP PRIORITY
+
+- YAK-438: Bi-weekly invoice send — DUE TODAY. Assess all project work and send invoices. Do this before end of day.
+- YAK-440: Fiddletree 20hrs/week — Due TOMORROW (Nov 21). Make sure this week's hours are logged and on track.
+
+2. THIS WEEK
+
+Fiddletree:
+- YAK-439 (due Nov 14) — OVERDUE by 6 days, still In Progress. Close this out or mark done.
+- YAK-437 (due Nov 7) — OVERDUE by 13 days. Same deal.
+- Honestly, YAK-436 and everything before it is also overdue and still open. You have 20+ weeks of "20 hours a week" tasks sitting In Progress going back to March. These need a bulk close or status update.
+
+Yak Dev Company:
+- YAK-435 (invoice, due Nov 6) — OVERDUE. Was this sent? If yes, close it. If no, send it now alongside today's.
+- Same problem: invoicing tasks back to March are all still in Todo. Bulk close the ones that are done.
+
+3. BLOCKED / WAITING
+
+- EZ Layaway has 47 tasks (YAK-341 to YAK-386) all unassigned, no priority, no due dates. Nothing is moving. If this project is active, it needs prioritization, assignment, and a timeline. If it's on hold, fine, but flag it.
+
+4. LOW PRIORITY
+
+- Clean up Linear. The backlog of unclosed recurring tasks is making it impossible to see real status. Block 30 min to bulk-close completed Fiddletree and invoice tasks.

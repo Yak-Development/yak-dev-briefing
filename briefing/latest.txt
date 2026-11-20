@@ -1,27 +1,25 @@
-DAILY BRIEFING — Thu Nov 19, 2026
+DAILY BRIEFING — Friday, Nov 20, 2026
 
 1. TOP PRIORITY
 
-- Invoice prep is due TOMORROW (YAK-438, Fri 11/20). Assess all project work and get invoices sent. Don't let this slip.
-- Fiddletree 20hrs (YAK-440) due Sat 11/21. Make sure you're on track for hours this week.
-- You have a pile of overdue Fiddletree weekly tickets (YAK-439 due 11/14, YAK-437 due 11/7, and many more going back months) still marked In Progress. Either close them out or flag what's going on. Same for overdue invoice tasks (YAK-435 due 11/6 and older). This is a mess — needs a cleanup pass.
+- YAK-438: Bi-weekly invoice send — DUE TODAY. Assess all project work and send invoices. Do this before end of day.
+- YAK-440: Fiddletree 20hrs/week — Due TOMORROW (Nov 21). Make sure this week's hours are logged and on track.
 
 2. THIS WEEK
 
 Fiddletree:
-- Hit your 20hrs for the current week (YAK-440, due 11/21)
-- Close out last week's ticket (YAK-439) if hours were completed
+- YAK-439 (due Nov 14) — OVERDUE by 6 days, still In Progress. Close this out or mark done.
+- YAK-437 (due Nov 7) — OVERDUE by 13 days. Same deal.
+- Honestly, YAK-436 and everything before it is also overdue and still open. You have 20+ weeks of "20 hours a week" tasks sitting In Progress going back to March. These need a bulk close or status update.
 
 Yak Dev Company:
-- Send invoices tomorrow (YAK-438)
-
-EZ Layaway:
-- 40+ tickets sitting in Todo, unassigned, no due dates, no priority. No action needed this week but worth noting — nothing is moving here.
+- YAK-435 (invoice, due Nov 6) — OVERDUE. Was this sent? If yes, close it. If no, send it now alongside today's.
+- Same problem: invoicing tasks back to March are all still in Todo. Bulk close the ones that are done.
 
 3. BLOCKED / WAITING
 
-- EZ Layaway has zero assigned tickets and no timeline. If this project is active, it needs prioritization and scheduling. If it's on hold, fine, but that should be explicit.
+- EZ Layaway has 47 tasks (YAK-341 to YAK-386) all unassigned, no priority, no due dates. Nothing is moving. If this project is active, it needs prioritization, assignment, and a timeline. If it's on hold, fine, but flag it.
 
 4. LOW PRIORITY
 
-- Clean up all the overdue Fiddletree and invoice tickets. Close completed ones so your board isn't a wall of red. This is 30+ overdue items cluttering everything and making it hard to see what actually matters.
+- Clean up Linear. The backlog of unclosed recurring tasks is making it impossible to see real status. Block 30 min to bulk-close completed Fiddletree and invoice tasks.
