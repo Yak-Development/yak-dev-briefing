@@ -1,34 +1,28 @@
-DAILY BRIEFING - Tue Nov 24, 2026
-
-—
+DAILY BRIEFING — Tue Nov 24, 2026
 
 1. TOP PRIORITY
 
-OVERDUE: Invoice send (YAK-438) was due Fri 11/20. Handle this today - assess work across projects and send invoices before it gets any later.
+OVERDUE: Invoice send (YAK-438) was due Nov 20. Handle this today — you've got unbilled work stacking up.
 
-OVERDUE: Fiddletree 20hrs/wk (YAK-440) was due 11/21. If hours are done, close it out. If not, log what's left.
+OVERDUE: Fiddletree 20hrs (YAK-440) was due Nov 21. Close it out or log remaining hours.
 
-Also worth noting: YAK-437, 436, 435, and everything before them are still open and way past due. You've got ~20 overdue Fiddletree weekly tickets and ~6 overdue invoice tickets sitting in there. Bulk close everything that's been completed or this board is going to stay useless.
-
-—
+Also still open: Fiddletree 20hrs weeks going back to March (YAK-388 through YAK-439) — all overdue and sitting In Progress. If these are done, batch-close them. If not, that's a bigger conversation.
 
 2. THIS WEEK
 
-Fiddletree:
-- YAK-442 (20hrs/wk) due Sat 11/28. Track your hours and stay on pace.
+Fiddletree
+- Current week block (YAK-442) due Nov 28. Get your 20 hours in.
 
-Yak Dev:
-- YAK-441 (invoice send) due Fri 12/4. Two weeks out, no action needed yet.
-
-—
+Yak Dev
+- Next invoice send (YAK-441) due Dec 4. Not urgent yet but start tracking hours now so it's easy on Friday.
 
 3. BLOCKED / WAITING
 
-EZ Layaway has 44 tickets (YAK-343 through YAK-386) sitting in Todo, all unassigned, no priority, no due dates. This project isn't moving. If it's supposed to be active, it needs scoping, prioritization, and a timeline. If it's on hold, fine, but worth acknowledging.
-
-—
+EZ Layaway has 40+ tickets (YAK-343 through YAK-386) sitting in Todo, unassigned, no priority, no due dates. Nothing is moving. If this project is active, it needs a plan — scope a sprint, assign priorities, set dates. If it's on hold, fine, but worth noting it's collecting dust.
 
 4. LOW PRIORITY
 
-- Clean up Linear. Dozens of past-due recurring tickets are cluttering the board. Close completed ones in bulk so your active view is actually useful.
-- EZ Layaway backlog is well broken down but needs a kick to get started.
+- Past invoice sends (YAK-435, 432, 429, 426, etc.) still showing Todo. If sent, close them. If not — problem.
+- EZ Layaway backlog is well-organized but completely untouched. Decide when this kicks off.
+
+BOTTOM LINE: Send that overdue invoice today. Clean up the backlog of completed Fiddletree weeks. Then decide what's happening with EZ Layaway.
