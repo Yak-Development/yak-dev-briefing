@@ -1,0 +1,24 @@
+DAILY BRIEFING — Fri Nov 27, 2026
+
+1. TOP PRIORITY
+
+- YAK-442: Fiddletree "20 hours a week" — DUE TOMORROW (Nov 28). Make sure your hours are logged and this is wrapped up today.
+
+- YAK-440: Fiddletree "20 hours a week" — OVERDUE (was due Nov 21). Still In Progress. Close this out or mark done.
+
+- YAK-439, 437, 436, 434, 433, 431, 430, 428, 427, 425, 424, 422, 421, 419, 418, 416, 415, 413, 412, 410, 409, 407, 406, 404, 403, 401, 400, 398, 397, 395, 394, 392, 391, 389, 388 — ALL OVERDUE Fiddletree weekly tickets still marked In Progress going back to March. You've got 35+ overdue tickets piling up. Bulk close everything that's been completed.
+
+- YAK-438: Invoice send — OVERDUE (Nov 20). Did this go out? If not, send today. Also check YAK-435, 432, 429, 426, 423, 420, 417, 414, 411, 408, 405, 402, 399, 396, 393, 390, 387 — all overdue invoice tasks still in Todo.
+
+2. THIS WEEK
+
+- Fiddletree: Hit your 20 hours for YAK-442, close it before tomorrow's due date.
+- Yak Dev: YAK-441 invoice send due Dec 4. Start prepping invoice next week.
+
+3. BLOCKED / WAITING
+
+- EZ Layaway (YAK-343 through 386): 44 tickets, all unassigned, no priority, no due dates. Nothing moves until you scope timelines and assign work. Decide when this project kicks off.
+
+4. LOW PRIORITY
+
+- Ticket hygiene is bad. You have months of completed recurring tasks still open. Set aside 15 min to bulk-close everything that's done. Your board is unreadable right now.
